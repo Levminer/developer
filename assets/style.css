@@ -46,72 +46,28 @@ body {
 }
 
 /* navbar */
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 10%;
+
+.nav {
 	background-color: #24252a;
-}
 
-.logo {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	color: #edf0f1;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-}
-
-.logo:hover {
-	color: rgb(222, 10, 10);
-}
-
-.nav__links a,
-.cta,
-.overlay__content a {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	color: #edf0f1;
-	text-decoration: none;
-}
-
-.nav__links {
 	list-style: none;
-	display: flex;
-}
-
-.nav__links li {
-	padding: 0px 20px;
-}
-
-.nav__links li a {
-	transition: all 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-	color: rgb(222, 10, 10);
-}
-
-.button {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	text-decoration: none;
-	background: #24252a;
-	border-radius: 50px;
-	border: 1px solid white;
+}
+.nav li {
+	display: inline;
+}
+.nav a {
 	display: inline-block;
-	cursor: pointer;
+	padding: 1rem;
 	color: white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 9px 25px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
+	transition: ease 0.5s;
 }
-.button:hover {
-	background: #24252a;
-	border: 1px solid rgb(222, 10, 10);
-	color: rgb(222, 10, 10);
+
+.nav a:hover {
+	color: #de0a0a;
 }
 
 a:link {

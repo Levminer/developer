@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home</title>
+		<title>Password</title>
 		<link rel="stylesheet" href="assets/style.css" />
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+		<script src="assets/script.js"></script>
 	</head>
-	<body>
+	<body onload="generate()">
 		<!-- navbar -->
 		<header>
 			<nav>
@@ -19,14 +20,21 @@
 			</nav>
 		</header>
 		<!-- site -->
-
-		<div class="center">
-			<h1>Levminer Developer Page</h1>
+		<div class="password">
+			<h1>Random Password Generator</h1>
 
 			<br />
 
-			<a class="button" href="https://developer.levminer.me/password">Password</a>
-			<a class="button" href="https://developer.levminer.me/color">Color</a>
+			<label for="input1" id="label1">Password</label>
+			<label for="input2" id="label2">Length</label>
+
+			<input type="text" class="input" name="input1" id="password_text" placeholder="Password" value="01234567" />
+			<input type="number" class="input" name="input2" id="password_length" placeholder="Length" value="8" />
+
+			<br />
+
+			<button class="button" onclick="copy()">Copy!</button>
+			<button class="button" onclick="generate()">Generate!</button>
 		</div>
 	</body>
 </html>

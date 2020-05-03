@@ -11,7 +11,7 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.color {
+.password {
 	position: relative;
 	top: 200px;
 	text-align: center;
@@ -19,11 +19,11 @@ body {
 
 	margin: 100px auto;
 	height: 185px;
-	width: 450px;
+	width: 500px;
 	border-radius: 25px;
 }
 
-#color_text {
+.input {
 	margin: 15px;
 	border: 1px solid white;
 	padding: 1rem;
@@ -34,7 +34,12 @@ body {
 
 #label1 {
 	position: absolute;
-	left: 205px;
+	left: 100px;
+	top: 45px;
+}
+#label2 {
+	position: absolute;
+	left: 340px;
 	top: 45px;
 }
 
