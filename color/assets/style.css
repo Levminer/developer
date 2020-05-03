@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #de0a0a;
+	text-align: center;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.color {
+	position: relative;
+	top: 200px;
+	text-align: center;
+	background-color: #24252a;
+
+	margin: 100px auto;
+	height: 165px;
+	width: 450px;
+	border-radius: 25px;
+}
+
+#color_text {
+	margin: 15px;
+	border: 1px solid white;
+	padding: 1rem;
+	border-radius: 28px;
+	transition: 0.3s;
+	text-align: center;
+}
+
+/* navbar */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: #24252a;
+}
+
+.logo {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+
+.logo:hover {
+	color: rgb(222, 10, 10);
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+.nav__links {
+	list-style: none;
+	display: flex;
+}
+
+.nav__links li {
+	padding: 0px 20px;
+}
+
+.nav__links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+	color: rgb(222, 10, 10);
+}
+
+.button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	background: #24252a;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 9px 25px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+.button:hover {
+	background: #24252a;
+	border: 1px solid rgb(222, 10, 10);
+	color: rgb(222, 10, 10);
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
