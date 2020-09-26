@@ -1,0 +1,150 @@
+.input {
+	margin: 15px;
+	border: 1px solid white;
+	padding: 1rem;
+	border-radius: 28px;
+	transition: 0.3s;
+	text-align: center;
+}
+
+#label1 {
+	position: absolute;
+	left: 100px;
+	top: 45px;
+}
+#label2 {
+	position: absolute;
+	left: 340px;
+	top: 45px;
+}
+
+.center {
+	position: relative;
+	top: 200px;
+	text-align: center;
+	background-color: #24252a;
+
+	margin: 100px auto;
+	height: 150px;
+	width: 500px;
+	border-radius: 25px;
+}
+
+.button1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	background: #24252a;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 9px 25px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	width: 205px;
+
+	position: relative;
+	right: 15px;
+}
+
+.button2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	background: #24252a;
+	border-radius: 50px;
+	border: 1px solid white;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 9px 25px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	width: 205px;
+
+	position: relative;
+	left: 15px;
+}
+
+.button1:hover {
+	background: #24252a;
+	border: 1px solid rgb(222, 10, 10);
+	color: rgb(222, 10, 10);
+}
+
+.button2:hover {
+	background: #24252a;
+	border: 1px solid rgb(222, 10, 10);
+	color: rgb(222, 10, 10);
+}
+
+body {
+	background-color: #de0a0a;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* navbar */
+
+.nav ul {
+	list-style: none;
+	background-color: #24252a;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	width: 100px;
+	display: block;
+	padding: 20px;
+	font-size: 20px;
+	transition: ease 0.5s;
+}
+
+.nav a:hover {
+	color: #de0a0a;
+}
+
+.board {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+:root {
+	--cell-size: 100px;
+	--mark-size: calc(var(--cell-size) * 0.9);
+}

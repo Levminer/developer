@@ -1,0 +1,172 @@
+:root {
+	--mnr_red: rgb(222, 10, 10);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.main {
+	position: relative;
+	top: 150px;
+	text-align: center;
+	background-color: rgb(42, 36, 36);
+
+	margin: 100px auto;
+	height: 370px;
+	width: 450px;
+	border-radius: 25px;
+}
+
+.second {
+	display: none;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	background-color: rgb(42, 36, 36);
+
+	margin: 100px auto;
+	height: 360px;
+	width: 450px;
+	border-radius: 25px;
+}
+
+.link:link {
+	text-decoration: underline;
+	color: white;
+	transition: 0.2s ease-in;
+}
+
+.link:hover {
+	text-decoration: underline dashed !important;
+	color: var(--mnr_red) !important;
+}
+
+.link:visited {
+	text-decoration: underline;
+	color: white;
+}
+
+#show_picker {
+	position: relative;
+	top: 30px;
+}
+
+* {
+	outline: none;
+}
+
+::selection {
+	background: #ffffff;
+}
+
+#color_text {
+	margin-top: 15px;
+	border: 1px solid rgb(255, 255, 255);
+	padding: 1rem;
+	border-radius: 28px;
+	transition: 0.3s;
+	text-align: center;
+	user-select: none;
+	cursor: default;
+}
+
+#label1 {
+	position: absolute;
+	left: 205px;
+	top: 50px;
+}
+
+body {
+	background-color: rgb(219, 10, 10);
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* navbar */
+
+.nav ul {
+	list-style: none;
+	background-color: #24252a;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	width: 100px;
+	display: block;
+	padding: 20px;
+	font-size: 20px;
+	transition: ease 0.5s;
+}
+
+.nav a:hover {
+	color: #de0a0a;
+}
+
+/* buttons */
+/* buttons */
+.button {
+	background: rgb(42, 36, 36);
+	border-radius: 28px;
+	border: 1px solid white;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	transition: 0.2s ease-in;
+	position: relative;
+	top: 40px;
+}
+
+.button:hover {
+	background: rgb(42, 36, 36);
+	border: 1px solid var(--mnr_red);
+	color: var(--mnr_red);
+}
+
+.but {
+	background: rgb(42, 36, 36);
+	border-radius: 28px;
+	border: 1px solid white;
+	cursor: pointer;
+	color: white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+	transition: 0.2s ease-in;
+	position: relative;
+	top: 20px;
+	width: 350px;
+}
+
+.but:hover {
+	background: rgb(42, 36, 36);
+	border: 1px solid var(--mnr_red);
+	color: var(--mnr_red);
+}
+
+.one {
+	position: relative;
+	bottom: 40px;
+	margin: 1rem;
+	line-height: 60px;
+}
+
+.two {
+	position: relative;
+	margin: 1rem;
+	bottom: 20px;
+}

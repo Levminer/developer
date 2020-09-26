@@ -4,32 +4,55 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Color</title>
-		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="./assets/index.css" />
 		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-		<script src="assets/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.min.js"></script>
+		<script src="./assets/index.js"></script>
 	</head>
 	<body onload="hex_start()">
 		<!-- navbar -->
 		<div class="nav">
 			<ul>
-				<li><a href="https://developer.levminer.me/password">Password</a></li>
-				<li><a href="https://developer.levminer.me">Home</a></li>
-				<li><a href="https://developer.levminer.me/color">Color</a></li>
+				<li><a href="https://developer.levminer.com/reaction">Reaction</a></li>
+				<li><a href="https://developer.levminer.com/password">Password</a></li>
+				<li><a href="https://developer.levminer.com">Home</a></li>
+				<li><a href="https://developer.levminer.com/color">Color</a></li>
 			</ul>
 		</div>
 		<!-- site -->
-		<div class="color">
+		<div class="main">
 			<h1>Random Color Generator</h1>
-
+			<input type="text" id="color_text" name="input1" value="#de0a0a" readonly />
 			<label for="input1" id="label1">Color</label>
-
-			<input type="text" id="color_text" name="input1" value="#de0a0a" />
-
-			<br />
-
-			<button class="button" onclick="rgb_start()">RGB</button>
-			<button class="button" onclick="copy()">Copy!</button>
-			<button class="button" onclick="hex_start()">HEX</button>
+			<div class="one">
+				<button class="button" onclick="rgb_start()">RGB</button>
+				<button class="button" onclick="hex_start()">HEX</button>
+				<button class="button" onclick="hsl_start()">HSL</button>
+				<br />
+				<button class="button" onclick="rgba_start()">RGBA</button>
+				<button class="button" onclick="hexa_start()">HEXA</button>
+				<button class="button" onclick="hsla_start()">HSLA</button>
+			</div>
+			<div class="two">
+				<button class="but" onclick="copy()">Copy!</button>
+				<br />
+				<a class="link" id="show_picker" href="#picker" onclick="picker()">Show Color Picker</a>
+			</div>
 		</div>
+
+		<div class="second" id="picker">
+			<h1>Color Picker</h1>
+			<div class="picker" acp-show-rgb="yes" acp-show-hsl="no" acp-show-hex="no" acp-show-alpha="yes"></div>
+		</div>
+
+		<script>
+			AColorPicker.from(".picker").on("change", (picker, color) => {
+				document.body.style.backgroundColor = color
+				console.log(color)
+
+				let color_text = document.querySelector("#color_text")
+				color_text.value = color
+			})
+		</script>
 	</body>
 </html>
