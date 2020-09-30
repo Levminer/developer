@@ -22,76 +22,16 @@
 	position: relative;
 	top: 200px;
 	text-align: center;
-	background-color: #24252a;
-
-	margin: 100px auto;
-	height: 150px;
-	width: 500px;
+	background-color: var(--df_gray);
+	padding-top: 10px;
+	margin: 130px auto;
+	height: 320px;
+	width: 850px;
 	border-radius: 25px;
 }
 
-.button1 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	text-decoration: none;
-	background: #24252a;
-	border-radius: 50px;
-	border: 1px solid white;
-	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 9px 25px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-	width: 205px;
-
-	position: relative;
-	right: 15px;
-}
-
-.button2 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	text-decoration: none;
-	background: #24252a;
-	border-radius: 50px;
-	border: 1px solid white;
-	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 9px 25px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-	width: 205px;
-
-	position: relative;
-	left: 15px;
-}
-
-.button1:hover {
-	background: #24252a;
-	border: 1px solid rgb(222, 10, 10);
-	color: rgb(222, 10, 10);
-}
-
-.button2:hover {
-	background: #24252a;
-	border: 1px solid rgb(222, 10, 10);
-	color: rgb(222, 10, 10);
-}
-
 body {
-	background-color: #de0a0a;
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	background: rgb(25, 23, 23);
 }
 
 /* navbar */

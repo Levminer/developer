@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
 		<title>Password</title>
-		<link rel="stylesheet" href="assets/style.css" />
-		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-		<script src="assets/script.js"></script>
+		<!-- css -->
+		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.0.0.css" />
+		<link rel="stylesheet" href="./assets/style.css" />
+		<!-- js -->
+		<script src="./assets/script.js"></script>
 	</head>
 	<body onload="generate()">
 		<!-- navbar -->
-		<div class="nav">
-			<ul>
-				<li><a href="https://developer.levminer.com/reaction">Reaction</a></li>
-				<li><a href="https://developer.levminer.com/password">Password</a></li>
-				<li><a href="https://developer.levminer.com">Home</a></li>
-				<li><a href="https://developer.levminer.com/color">Color</a></li>
-			</ul>
-		</div>
+		<header>
+			<a class="navbar-logo" href="https://developer.levminer.com">Levminer Developer Site</a>
+			<nav>
+				<ul class="navbar-link">
+					<li><a href="https://developer.levminer.com/color">Color</a></li>
+					<li><a href="https://developer.levminer.com/dragonfly">Dragonfly</a></li>
+					<li><a href="https://developer.levminer.com/password">Password</a></li>
+					<li><a href="https://developer.levminer.com/reaction">Reaction</a></li>
+				</ul>
+			</nav>
+			<a class="navbar-button" href="https://www.levminer.com" target="_blank">Website</a>
+		</header>
 		<!-- site -->
-		<div class="password">
-			<h1>Random Password Generator</h1>
+		<div class="center">
+			<h1>Password Generator</h1>
 
 			<label for="input1" id="label1">Password</label>
 			<label for="input2" id="label2">Length</label>
@@ -31,7 +38,7 @@
 			<br />
 
 			<button class="button1" onclick="copy()">Copy!</button>
-			<button class="button2" onclick="generate()">Generate!</button>
+			<button class="button1" onclick="generate()">Generate!</button>
 		</div>
 	</body>
 </html>

@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
 		<title>Color</title>
+		<!-- css -->
+		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.0.0.css" />
 		<link rel="stylesheet" href="./assets/index.css" />
-		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-		<script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.min.js"></script>
+		<!-- js -->
+		<script src="https://cdn.jsdelivr.net/npm/a-color-picker@1.2.1/dist/acolorpicker.min.js" type="text/javascript"></script>
 		<script src="./assets/index.js"></script>
 	</head>
 	<body onload="hex_start()">
 		<!-- navbar -->
-		<div class="nav">
-			<ul>
-				<li><a href="https://developer.levminer.com/reaction">Reaction</a></li>
-				<li><a href="https://developer.levminer.com/password">Password</a></li>
-				<li><a href="https://developer.levminer.com">Home</a></li>
-				<li><a href="https://developer.levminer.com/color">Color</a></li>
-			</ul>
-		</div>
+		<header>
+			<a class="navbar-logo" href="https://developer.levminer.com">Levminer Developer Site</a>
+			<nav>
+				<ul class="navbar-link">
+					<li><a href="https://developer.levminer.com/color">Color</a></li>
+					<li><a href="https://developer.levminer.com/dragonfly">Dragonfly</a></li>
+					<li><a href="https://developer.levminer.com/password">Password</a></li>
+					<li><a href="https://developer.levminer.com/reaction">Reaction</a></li>
+				</ul>
+			</nav>
+			<a class="navbar-button" href="https://www.levminer.com" target="_blank">Website</a>
+		</header>
 		<!-- site -->
 		<div class="main">
-			<h1>Random Color Generator</h1>
+			<h1>Color Generator</h1>
 			<input type="text" id="color_text" name="input1" value="#de0a0a" readonly />
 			<label for="input1" id="label1">Color</label>
 			<div class="one">
-				<button class="button" onclick="rgb_start()">RGB</button>
-				<button class="button" onclick="hex_start()">HEX</button>
-				<button class="button" onclick="hsl_start()">HSL</button>
+				<button class="button2" onclick="rgb_start()">RGB</button>
+				<button class="button2" onclick="hex_start()">HEX</button>
+				<button class="button2" onclick="hsl_start()">HSL</button>
 				<br />
-				<button class="button" onclick="rgba_start()">RGBA</button>
-				<button class="button" onclick="hexa_start()">HEXA</button>
-				<button class="button" onclick="hsla_start()">HSLA</button>
+				<button class="button2" onclick="rgba_start()">RGBA</button>
+				<button class="button2" onclick="hexa_start()">HEXA</button>
+				<button class="button2" onclick="hsla_start()">HSLA</button>
 			</div>
 			<div class="two">
-				<button class="but" onclick="copy()">Copy!</button>
+				<button class="button2 wide" onclick="copy()">Copy!</button>
 				<br />
-				<a class="link" id="show_picker" href="#picker" onclick="picker()">Show Color Picker</a>
+				<a class="link1 rgb" id="show_picker" href="#picker" onclick="picker()">Show Color Picker</a>
 			</div>
 		</div>
 

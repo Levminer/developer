@@ -1,0 +1,7 @@
+body {
+	background: var(--df_gray);
+}
+
+div {
+	margin-bottom: 100px;
+}

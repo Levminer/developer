@@ -1,134 +1,46 @@
-.password {
-	position: relative;
-	top: 200px;
-	text-align: center;
-	background-color: #24252a;
-
-	margin: 100px auto;
-	height: 185px;
-	width: 500px;
-	border-radius: 25px;
-}
-
-.input {
-	margin: 15px;
-	border: 1px solid white;
-	padding: 1rem;
-	border-radius: 28px;
-	transition: 0.3s;
-	text-align: center;
-}
-
-#label1 {
-	position: absolute;
-	left: 100px;
-	top: 45px;
-}
-#label2 {
-	position: absolute;
-	left: 340px;
-	top: 45px;
-}
-
 .center {
 	position: relative;
 	top: 200px;
 	text-align: center;
-	background-color: #24252a;
-
-	margin: 100px auto;
-	height: 125px;
-	width: 450px;
+	background-color: var(--df_gray);
+	padding-top: 30px;
+	margin: 130px auto;
+	height: 310px;
+	width: 700px;
 	border-radius: 25px;
 }
 
-.button1 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	text-decoration: none;
-	background: #24252a;
-	border-radius: 50px;
+.input {
+	margin: 20px;
 	border: 1px solid white;
-	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 9px 25px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-	width: 205px;
-
-	position: relative;
-	right: 15px;
+	padding: 1rem;
+	border-radius: 28px;
+	transition: 0.2s ease-in;
+	text-align: center;
+	width: 250px;
 }
 
-.button2 {
-	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
-	text-decoration: none;
-	background: #24252a;
-	border-radius: 50px;
+.input:hover {
+	margin: 20px;
 	border: 1px solid white;
-	display: inline-block;
-	cursor: pointer;
+	padding: 1rem;
+	border-radius: 28px;
+	text-align: center;
+	width: 250px;
+	background-color: var(--df_gray);
 	color: white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 9px 25px;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-	width: 205px;
-
-	position: relative;
-	left: 15px;
 }
 
-.button1:hover {
-	background: #24252a;
-	border: 1px solid rgb(222, 10, 10);
-	color: rgb(222, 10, 10);
+#label1 {
+	position: absolute;
+	right: 480px;
 }
-
-.button2:hover {
-	background: #24252a;
-	border: 1px solid rgb(222, 10, 10);
-	color: rgb(222, 10, 10);
+#label2 {
+	position: absolute;
+	left: 485px;
 }
 
 body {
-	background-color: #de0a0a;
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-}
-
-/* navbar */
-
-.nav ul {
-	list-style: none;
-	background-color: #24252a;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
-
-.nav li {
-	display: inline-block;
-}
-
-.nav a {
-	text-decoration: none;
-	color: white;
-	width: 100px;
-	display: block;
-	padding: 20px;
-	font-size: 20px;
-	transition: ease 0.5s;
-}
-
-.nav a:hover {
-	color: #de0a0a;
+	background: rgb(25, 23, 23);
+	background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(27, 24, 24, 1) 50%);
 }
