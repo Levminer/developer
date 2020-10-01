@@ -5,3 +5,12 @@ body {
 div {
 	margin-bottom: 100px;
 }
+
+.center,
+.left,
+.right,
+.left-center,
+.right-center {
+	background-color: black;
+}
+

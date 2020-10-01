@@ -1,0 +1,26 @@
+.center {
+	top: 110px;
+	width: 800px;
+	height: 370px;
+}
+
+#label1 {
+	position: absolute;
+	right: 495px;
+	top: 145px;
+}
+#label2 {
+	position: absolute;
+	left: 500px;
+	top: 145px;
+}
+
+.radios {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+body {
+	background: rgb(25, 23, 23);
+	background: linear-gradient(90deg, rgba(25, 23, 23, 1) 0%, rgba(27, 24, 24, 1) 50%);
+}
