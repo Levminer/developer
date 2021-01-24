@@ -1,5 +1,5 @@
 body {
-	background: var(--df_gray);
+	background: var(--df_primary_background);
 }
 
 div {
@@ -9,8 +9,7 @@ div {
 .center,
 .left,
 .right,
-.left-center,
-.right-center {
+.left_center,
+.right_center {
 	background-color: black;
 }
-

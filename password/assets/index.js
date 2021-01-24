@@ -58,7 +58,7 @@ let copy = () => {
 
 	let memory = document.getElementById("password_text").value
 
-	let copyied = (document.getElementById("password_text").value = "Copied!")
+	let copyied = (document.getElementById("password_text").value = "Copied")
 
 	document.getElementById("password_text").blur()
 
